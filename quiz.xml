@@ -1,0 +1,20 @@
+<quiz>
+    <questions>
+        <question text="2+2" option-index="4">
+            <option text="0"/>
+            <option text="1"/>
+            <option text="2"/>
+            <option text="3"/>
+            <option text="4"/>
+        </question>
+        <question text="2+5" answer="7"/>
+        <question text="2+3" answer="5">
+            <option text="0"/>
+            <option text="1"/>
+            <option text="2"/>
+            <option text="3"/>
+            <option text="4"/>
+            <option text="5"/>
+        </question>
+    </questions>
+</quiz>
