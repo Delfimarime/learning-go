@@ -308,3 +308,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/intellij,intellij+all,intellij+iml,linux,windows,macos,go
 
 bin/
+
+.idea/
