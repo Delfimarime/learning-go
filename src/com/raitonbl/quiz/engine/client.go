@@ -2,23 +2,25 @@ package engine
 
 type QuizClient interface {
 
-	GetHint() string
-
-	GetQuestion() string
-
-	GetOptions() []string
-
-	Answer(answer string) bool
-
-	GetScore() int
-
-	HasNext() bool
-
 	IsLast() bool
 
 	IsFirst() bool
 
+	HasNext() bool
+
+	GetScore() int
+
+	GetHint() string
+
+	GetQuestion() string
+
 	AfterPropertiesSet()
+
+	GetMaximumScore() int
+
+	GetOptions() []string
+
+	Answer(answer string) bool
 
 	SetRepository(repository Repository)
 

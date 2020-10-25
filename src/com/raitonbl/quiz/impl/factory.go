@@ -118,6 +118,15 @@ func (client *TimelessClient) AfterPropertiesSet() {
 	}
 }
 
+func (client *TimelessClient) GetMaximumScore() int {
+
+	if !client.init {
+		errors.New("client requires initialization")
+	}
+
+	return len(client.quiz)
+}
+
 func (client *TimelessClient) SetRepository(repository engine.Repository) {
 	if repository != nil {
 		client.repository = repository
