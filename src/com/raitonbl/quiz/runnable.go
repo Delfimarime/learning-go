@@ -8,8 +8,12 @@ import (
 
 func main() {
 
+	var input string
+	fmt.Print("File?")
+	fmt.Scan(&input)
+
 	client := impl.TimelessClient{}
-	client.SetRepository(impl.XmlRepository{Path: "/Users/delfimarime/Documents/git/github/learning-go/quiz.xml"})
+	client.SetRepository(impl.XmlRepository{Path:input})
 	client.AfterPropertiesSet()
 
 	for ok := true; ok; ok = client.HasNext() {
