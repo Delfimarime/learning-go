@@ -25,7 +25,7 @@ func main() {
 
 	}
 
-	fmt.Printf("Correct answers: %d of %d",client.GetScore(), client.GetMaximumScore())
+	fmt.Printf("Correct answers: %d / %d",client.GetScore(), client.GetMaximumScore())
 
 }
 
